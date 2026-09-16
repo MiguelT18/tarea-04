@@ -1,0 +1,221 @@
+TAREA 4
+
+INSTRUCCIONES:
+1. Cada programa debe ser escrito en un archivo independiente, denominados: Problema1.cpp, Problema2.cpp, etc., según corresponda al número específico de cada enunciado.
+2. De ser necesario, en cada problema se pueden usar una o más funciones adicionales.
+3. La función requerida debe mantener el encabezado exacto (firma), especificado en cada enunciado.
+4. Subir a Aulas Virtuales, en el enlace: TAREA 4, todos los archivos con extensión ".cpp".
+5. Cada problema se califica sobre 100% y luego se promedian todas las notas.
+
+
+Problema1:
+
+1. Escribir la función recursiva: bool esMultiplo(int n), que reciba un número n y devuelva 1 si n es múltiplo de 7, y devuelva 0 en caso contrario, sin usar el operador mod (%). El programa principal debe leer un número entero: n (0 <= n <= 1e9), llamar a la función esMultiplo() e imprimir el resultado que esa función devuelve.
+ 
+EJEMPLO DE ENTRADA
+0
+EJEMPLO DE SALIDA
+1
+
+EJEMPLO DE ENTRADA
+18
+EJEMPLO DE SALIDA
+0
+ 
+EJEMPLO DE ENTRADA
+35
+EJEMPLO DE SALIDA
+1
+
+EJEMPLO DE ENTRADA
+111058073
+EJEMPLO DE SALIDA
+1
+
+
+Problema2:
+
+Escribir la función recursiva: int cantidadMultiplosDeN(int a, int b, int n), que devuelva la cantidad de múltiplos del número n, existentes en el rango [a, b], incluyendo éstos, si son múltiplos de n. El programa principal debe leer tres números enteros: a, b, n (0 < {a, b, n} <= 1e9), llamar a la función cantidadMultiplosDeN() e imprimir el resultado que esa función devuelve.
+ 
+EJEMPLO DE ENTRADA
+1 10 2
+EJEMPLO DE SALIDA
+5
+
+EJEMPLO DE ENTRADA
+1 10 11
+EJEMPLO DE SALIDA
+0
+
+EJEMPLO DE ENTRADA
+1 33 11
+EJEMPLO DE SALIDA
+3
+ 
+EJEMPLO DE ENTRADA
+5 100 1
+EJEMPLO DE SALIDA
+96
+
+
+Problema3:
+
+Escribir la función recursiva: int sumaMultiplosDeN(int a, int b, int n), que devuelva la suma de los múltiplos del número N, existentes en el rango de a hasta b, incluyendo éstos si fuesen múltiplos de n. El programa principal debe leer tres números enteros: a, b, n (0 < {a, b, n} <= 1e9), llamar a la función cantidadMultiplosDeN() e imprimir el resultado que esa función devuelve.
+
+EJEMPLO DE ENTRADA
+1 10 2
+EJEMPLO DE SALIDA
+30
+
+EJEMPLO DE ENTRADA
+1 10 11
+EJEMPLO DE SALIDA
+0
+
+EJEMPLO DE ENTRADA
+1 33 11
+EJEMPLO DE SALIDA
+66
+ 
+EJEMPLO DE ENTRADA
+5 100 1
+EJEMPLO DE SALIDA
+5040
+
+
+
+Problema4:
+
+Escribir la función recursiva: int invertirNumero(int n), que reciba un número natural n y devuelva otro número entero que corresponda al número invertido de n. En el caso de que el número n tenga ceros en sus dígitos menos significativos, éstos serán ignorados en el número que devuelva la función, por ejemplo, si n=20700, la función devolverá 702, pues se ignoran los ceros a la izquierda. El programa principal debe leer un número natural: n, (0 < n <= 1e9), llamar a la función cantidadMultiplosDeN() e imprimir el resultado que esa función devuelve.
+ 
+EJEMPLO DE ENTRADA
+5
+EJEMPLO DE SALIDA
+5
+
+EJEMPLO DE ENTRADA
+18
+EJEMPLO DE SALIDA
+81
+
+EJEMPLO DE ENTRADA
+12345
+EJEMPLO DE SALIDA
+54321
+
+EJEMPLO DE ENTRADA
+209385800
+EJEMPLO DE SALIDA
+8583902
+
+
+Problema5:
+
+Uno de los ejemplos clásicos de recursividad múltiple es la serie de Fibonacci, que calcula el N-ésimo término de esta famosa serie, en cuyo caso recursivo se llama dos veces a sí misma. En este problema se pide escribir la función recursiva: int llamadasRecursivaFibonacci(int N), que reciba un número natural N y devuelva la cantidad de veces que se llama a la función recursiva Fibonacci cuando se calcula el n-ésimo término de Fibonacci. El programa principal debe leer un número natural: n, (0 < n <= 40), llamar a la función cantidadMultiplosDeN() e imprimir el resultado que esa función devuelve.
+
+EJEMPLO DE ENTRADA
+1
+EJEMPLO DE SALIDA
+1
+ 
+EJEMPLO DE ENTRADA
+2
+EJEMPLO DE SALIDA
+1
+
+EJEMPLO DE ENTRADA
+3
+EJEMPLO DE SALIDA
+3
+
+EJEMPLO DE ENTRADA
+5
+EJEMPLO DE SALIDA
+8
+
+
+Problema6:
+
+Escribir la función recursiva: void imprimirArreglo(vector<int> vec), que reciba un vector con números enteros, e imprima los valores que contiene el mismo, desde el primer valor hasta el último, en una sola línea y separados por espacios simples entre los valores. La función principal debe leer un número entero: n (0 < n < 100), leer n números enteros y cargarlos a un vector y por último llamar a la función: imprimirArreglo().
+
+EJEMPLO DE ENTRADA
+1
+5
+EJEMPLO DE SALIDA
+5
+ 
+EJEMPLO DE ENTRADA
+3
+10 20 30
+EJEMPLO DE SALIDA
+10 20 30
+
+EJEMPLO DE ENTRADA
+5
+1 2 3 4 5
+EJEMPLO DE SALIDA
+1 2 3 4 5
+
+EJEMPLO DE ENTRADA
+5
+5 4 3 2 1
+EJEMPLO DE SALIDA
+5 4 3 2 1
+
+ 
+Problema7:
+
+Escribir un programa con la función recursiva: int menorDato(vector<int> vec), que reciba un arreglo unidimensional con datos de tipo entero y devuelva el menor de los datos contenido en el mismo.  La función principal debe leer un número entero: n (0 < n < 100), leer n números enteros y cargarlos a un vector, luego llamar a la función: menorDato(), e imprimir el resultado que la función devuelve.
+
+EJEMPLO DE ENTRADA
+1
+5
+EJEMPLO DE SALIDA
+5
+
+EJEMPLO DE ENTRADA
+4
+8 4 2 9
+EJEMPLO DE SALIDA
+2
+
+EJEMPLO DE ENTRADA
+5
+34 -4 93 -54 33
+EJEMPLO DE SALIDA
+-54
+
+EJEMPLO DE ENTRADA
+8
+943 592 842 929 489 173 439 532
+EJEMPLO DE SALIDA
+173
+
+
+Problema8:
+
+Escribir un programa con la función recursiva: bool caracteresIguales(vector<char> vec), que reciba un vector con datos de tipo char, y devuelva: true si todos los caracteres del vector son iguales, y devuelva: false en caso contrario. La función principal debe leer un número entero: n (0 < n < 100), leer n caracteres y cargarlos a un vector, luego llamar a la función: caracteresIguales(), e imprimir la palabra: Iguales, si todos los caracteres son iguales o imprima la palabra: Diferentes, si no todos son iguales.
+
+EJEMPLO DE ENTRADA
+2
+a a
+EJEMPLO DE SALIDA
+Iguales
+
+EJEMPLO DE ENTRADA
+4
+====
+EJEMPLO DE SALIDA
+Iguales
+
+EJEMPLO DE ENTRADA
+6
+a a A a A A
+EJEMPLO DE SALIDA
+Diferentes
+
+EJEMPLO DE ENTRADA
+6
+123456
+EJEMPLO DE SALIDA
+Diferentes
