@@ -11,7 +11,7 @@ int main() {
 
   cin >> n;
 
-  cout << esMultiplo << endl;
+  cout << esMultiplo(n) << endl;
 
   return 0;
 }
