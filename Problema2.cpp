@@ -17,8 +17,8 @@ int cantidadMultiplosDeN(int a, int b, int n) {
   if (a > b)
     return 0;
 
-  if (a == 1)
-    return b / n;
-
-  return cantidadMultiplosDeN(1, b, n) - cantidadMultiplosDeN(1, a - 1, n);
+  if (a % n == 0)
+    return 1 + cantidadMultiplosDeN(a + 1, b, n);
+  else
+    return cantidadMultiplosDeN(a + 1, b, n);
 }
